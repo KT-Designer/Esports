@@ -1,0 +1,797 @@
+/* 字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap');
+
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* 置頂鍵和錨點沒滾動的關係設的 */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* 置頂鍵 */
+#scrolltop {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 26px;
+    background-image: url(../images/top.png);
+    background-size: 34%;
+    background-color: #000000;
+    box-shadow: 2px 2px 0px 0px #00000060;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50px;
+    display: none !important;
+}
+
+
+
+
+
+
+/* 浮動選單收合_類名(配合JS) */
+.menu_PC.closed {
+    transform: translateX(100%);
+}
+
+.open.show {
+    display: block;
+}
+
+/* 浮動主選單_監聽(.active配合JS) */
+.menu_PC .anchor-link.active a {
+    color: #000000;
+
+}
+
+.menu_PC .anchor-link.active {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+/* 浮動主選單_PC */
+.open {
+    display: none;
+    color: #FFFFFF;
+    position: fixed;
+    top: 110px;
+    right: 0px;
+    font-size: 18px;
+    writing-mode: vertical-lr;
+    padding: 18px 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 14px 0px 0px 14px;
+}
+
+
+.menu_PC {
+    position: fixed;
+    top: 100px;
+    right: 0px;
+    transition: transform 0.5s ease;
+    transform: translateX(0);
+
+}
+
+.menu_PC .close {
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu_PC .close p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    background: #000000;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+
+}
+
+
+
+.menu_PC .anchor-link {
+    width: 115px;
+    height: 52px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    margin-bottom: 4px;
+    line-height: 52px;
+    text-align: center;
+}
+
+.menu_PC .anchor-link a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 11.5px 17.5px;
+
+}
+
+.menu_PC ul li:last-child {
+    border-radius: 0px 0px 40px 40px;
+}
+
+
+.menu_PC .anchor-link:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.menu_PC .anchor-link a:hover {
+    color: #000000;
+}
+
+
+/* 浮動主選單_手機 */
+.menu_MB {
+    display: none;
+}
+
+
+
+/* 主視覺 */
+
+.kv {
+    text-align: center;
+    background-image: url(../images/kvbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.kv img {
+    width: 100%;
+    max-width: 1248px;
+
+}
+
+/* 背景 */
+.wrapper {
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+
+/* 購物攻略 */
+.radiers {
+    text-align: center;
+
+}
+
+.radiers .title {
+    margin: auto;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    max-width: 582px;
+}
+
+.radiers .title img {
+    width: 95%;
+    height: auto;
+}
+
+.radiers .container {
+    margin: auto;
+    max-width: 966px;
+    display: flex;
+}
+
+.radiers .container .item {
+    width: 50%;
+}
+
+.radiers .container .item img {
+    width: 100%;
+    height: auto;
+}
+
+.radiers .tickets {
+    width: 100%;
+    max-width: 914px;
+}
+
+.radiers .container img {
+    width: 100%;
+}
+
+/* 今日下殺 */
+.only {
+    padding-top: 30px;
+}
+
+.only .title {
+    margin-bottom: 58px;
+}
+
+.only .container {
+    max-width: 1156px;
+    margin-bottom: 49px;
+    padding: 0px 16px;
+}
+
+
+/* 電競電腦 */
+.slider {
+    text-align: center;
+}
+
+.slider .title {
+    margin: auto;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    max-width: 582px;
+}
+
+.slider .title img {
+    width: 95%;
+    height: auto;
+}
+
+
+/* 電競電腦_錨點 */
+.slider .slider-nav {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.slider .slider-nav {
+    margin: auto;
+}
+
+.slider .slider-nav .logo {
+    width: 100%;
+    max-width: 150.1px;
+    height: 56.47px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.slider .slider-nav .logo:hover {
+    background-color: #000000;
+
+}
+
+
+/* 電競電腦_卡片 */
+.slider .slider-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-left: 40px;
+    background: url(../images/card_bg.png) center no-repeat;
+}
+
+.slider-content .list {
+    max-width: 1013px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 12px;
+
+
+
+}
+
+.slider-content .list .card {
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 3px;
+    flex-basis: calc(20% - 12px);
+}
+
+.slider-content .list .brand {
+    height: 46px;
+    color: #FFFFFF;
+    font-size: 18px;
+    background-color: #011D32;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.slider-content .list .card-img img {
+    width: 100%;
+}
+
+.slider-content .list .card-body .name {
+    font-size: 16px;
+    line-height: 20px;
+    height: 40px;
+    padding: 10px;
+}
+
+.slider-content .list .money {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.slider-content .list .money .price {
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.slider-content .list .money h1 {
+    font-size: 23px;
+    font-weight: 700;
+    color: #BD1900;
+}
+
+.slider-content .list .buy {
+    height: 34px;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #000000;
+    margin: 6px 10px 10px 10px;
+    line-height: 34px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+
+/* 超連結底線 */
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+
+/* 電競主機_看更多 */
+.slider-content .more {
+    color: #FFFFFF;
+    white-space: nowrap;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 72px;
+    font-size: 24px;
+    width: 403px;
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #000000;
+}
+
+
+/* 高檔螢幕 */
+.box {
+    text-align: center;
+}
+
+.box .title {
+    margin: auto;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    max-width: 582px;
+}
+
+.box .title img {
+    width: 95%;
+    height: auto;
+}
+
+.box .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 120px 0px 120px 40px;
+    background: url(../images/card_bg_s.png) center no-repeat;
+}
+
+.box .container .list {
+    max-width: 1013px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 12px;
+
+}
+
+.box .card {
+    background-color: #FFFFFF;
+    flex-basis: calc(20% - 12px);
+    border-radius: 3px;
+}
+
+.box .container .brand {
+    height: 46px;
+    color: #FFFFFF;
+    font-size: 18px;
+    background-color: #011D32;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.box .container .card-img img {
+    width: 100%;
+}
+
+.box .container .name {
+    font-size: 16px;
+    line-height: 20px;
+    height: 40px;
+    padding: 10px;
+}
+
+.box .container .money {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.box .container .money .price {
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.box .container .money h1 {
+    font-size: 23px;
+    font-weight: 700;
+    color: #BD1900;
+}
+
+.box .container .buy {
+    height: 34px;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #000000;
+    margin: 6px 10px 10px 10px;
+    line-height: 34px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+
+/* 熱門廠牌 */
+.hotlogo {
+    padding-bottom: 100px;
+    margin: 0px 16px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+.hotlogo .slider {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 150px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    border: #FFFFFF 4px solid;
+    border-radius: 12px;
+}
+
+
+
+.hotlogo .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.hotlogo .slider::before {
+    left: 0;
+    top: 0;
+}
+
+.hotlogo .slider .slide-track {
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.hotlogo .slider .slide {
+    margin-right: 10px;
+
+
+}
+
+
+/* 頁尾 */
+.footer {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+
+
+/* 氣泡特效 */
+.bubbles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.bubble {
+    position: fixed;
+    bottom: -100px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: rise 10s infinite ease-in;
+}
+
+.sticky .bubble img {
+    width: 80%;
+}
+
+.bubble:nth-child(1) {
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    animation-duration: 8s;
+}
+
+.bubble:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    left: 20%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    left: 35%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(4) {
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    animation-duration: 11s;
+    animation-delay: 0s;
+}
+
+.bubble:nth-child(5) {
+    width: 35px;
+    height: 35px;
+    left: 55%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(6) {
+    width: 45px;
+    height: 45px;
+    left: 65%;
+    animation-duration: 8s;
+    animation-delay: 3s;
+}
+
+.bubble:nth-child(7) {
+    width: 90px;
+    height: 90px;
+    left: 70%;
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(8) {
+    width: 25px;
+    height: 25px;
+    left: 80%;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(9) {
+    width: 15px;
+    height: 15px;
+    left: 70%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(10) {
+    width: 90px;
+    height: 90px;
+    left: 25%;
+    animation-duration: 10s;
+    animation-delay: 4s;
+}
+
+@keyframes rise {
+    0% {
+        bottom: -100px;
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translate(100px);
+    }
+
+    100% {
+        bottom: 1080px;
+        transform: translateX(-200px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px) {
+
+    /* 電競電腦 */
+    .slider .slider-content {
+        padding-top: 30px;
+        padding-left: 0px;
+        background: none;
+    }
+
+    /* 高檔螢幕 */
+    .box .container {
+        padding: 10px 0px 0px 0px;
+        background: none;
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+
+
+    /* 置頂鍵 */
+    #scrolltop {
+        display: block !important;
+    }
+
+
+
+
+
+    /* 浮動主選單_手機 */
+    .menu_PC {
+        display: none;
+    }
+
+    .kv {
+        margin-top: 36px;
+    }
+
+    .menu_MB {
+        background-color: #002339;
+        position: fixed;
+        top: 0px;
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+
+    }
+
+    /* 隱藏捲軸 */
+    .menu_MB::-webkit-scrollbar {
+        display: none;
+    }
+
+    .menu_MB ul {
+        list-style: none;
+        display: flex;
+
+    }
+
+    .menu_MB ul li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 105px;
+        height: 43px;
+        font-size: 16px;
+        color: #FFFFFF;
+        background-color: #000000;
+        margin-right: 2px;
+    }
+
+
+    .menu_MB ul li a:hover {
+        background-color: #8d0000;
+    }
+
+    /* 今日下殺 */
+    .only .title {
+        margin-bottom: 28px;
+    }
+
+
+    /* 電競主機_錨點 */
+    .slider .slider-nav {
+        width: 70%;
+    }
+
+    .slider .slider-nav .logo img {
+        width: 80%;
+
+    }
+
+
+
+    /* 電競主機_卡片 */
+    .slider-content .list .card {
+        flex-basis: calc(50% - 12px);
+    }
+
+
+
+    /* 電競主機_看更多 */
+    .slider-content .more {
+        width: 320px;
+
+    }
+
+
+    /* 高檔螢幕 */
+    .box .card {
+        flex-basis: calc(50% - 12px);
+    }
+
+
+
+
+
+}
