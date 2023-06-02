@@ -316,7 +316,10 @@ html {
 /* 滑過卡片時，只有裡面的.name起作用 */
 .slider-content .list .card:hover .name {
     color: #BD1900;
+}
 
+.slider-content .list .card:hover .buy {
+    background-color: #8d0000;
 }
 
 
@@ -448,6 +451,10 @@ a:active {
 /* 滑過卡片時，只有裡面的.name起作用 */
 .box .card:hover .name {
     color: #BD1900;
+}
+
+.box .card:hover .buy {
+    background-color: #8d0000;
 }
 
 .box .container .brand {
