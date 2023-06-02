@@ -66,6 +66,8 @@ html {
     padding: 18px 12px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 14px 0px 0px 14px;
+    cursor: pointer;
+    /* ↑將鼠標改成手指 */
 }
 
 
@@ -81,6 +83,7 @@ html {
 .menu_PC .close {
     display: flex;
     justify-content: center;
+    cursor: pointer;
 
 }
 
