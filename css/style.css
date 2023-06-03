@@ -224,7 +224,7 @@ html {
 
 .only .container {
     max-width: 1156px;
-    margin-bottom: 49px;
+    margin-bottom: 20px;
     padding: 0px 16px;
 }
 
@@ -794,6 +794,16 @@ a:active {
     /* 今日下殺 */
     .only .title {
         margin-bottom: 28px;
+    }
+
+    .only .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .only .container .item {
+        flex-basis: 100%;
     }
 
 
