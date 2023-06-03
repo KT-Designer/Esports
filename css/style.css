@@ -446,9 +446,8 @@ a:active {
 }
 
 
-.box .container .card:hover {
+.box .card:hover {
     transform: translateY(-18px);
-
 }
 
 /* 滑過卡片時，只有裡面的.name起作用 */
@@ -811,6 +810,10 @@ a:active {
 
 
     /* 電競主機_卡片 */
+    .slider-content .list .card:hover {
+        transform: translateY(-0px);
+    }
+
     .slider-content .list .card {
         flex-basis: calc(50% - 12px);
     }
@@ -827,6 +830,10 @@ a:active {
     /* 高檔螢幕 */
     .box .card {
         flex-basis: calc(50% - 12px);
+    }
+
+    .box .card:hover {
+        transform: translateY(-0px);
     }
 
 
