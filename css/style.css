@@ -521,7 +521,7 @@ a:active {
     }
 
     100% {
-        transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 5));
     }
 }
 
@@ -557,7 +557,7 @@ a:active {
 .hotlogo .slider .slide-track {
     animation: scroll 20s linear infinite;
     display: flex;
-    width: calc(250px * 14);
+    width: calc(250px * 10);
 }
 
 .hotlogo .slider .slide {
