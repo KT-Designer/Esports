@@ -228,6 +228,14 @@ html {
     padding: 0px 16px;
 }
 
+.only .item img {
+    transition: transform 0.5s;
+}
+
+.only .item img:hover {
+    transform: scale(0.9);
+}
+
 
 /* 電競電腦 */
 .slider {
