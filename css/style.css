@@ -187,7 +187,9 @@ html {
 .radiers .title img {
     width: 95%;
     height: auto;
+
 }
+
 
 .radiers .container {
     margin: auto;
@@ -202,11 +204,20 @@ html {
 .radiers .container .item img {
     width: 100%;
     height: auto;
+    transition: transform 0.5s;
+}
+
+.radiers .container img:hover {
+    transform: scale(0.9);
 }
 
 .radiers .tickets {
     width: 100%;
     max-width: 914px;
+}
+
+.radiers .tickets img {
+    transition: transform 0.5s;
 }
 
 .radiers .container img {
